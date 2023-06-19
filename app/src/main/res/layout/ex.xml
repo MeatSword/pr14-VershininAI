@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#577BFF"
+    tools:context=".Planka">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="811dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@drawable/planka1" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="387dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView28"
+            app:srcCompat="@drawable/planka2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#577BFE"
+            android:text="ПЛАНКА"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView27"
+            app:layout_constraintStart_toStartOf="@+id/imageView27"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="264dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="72dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:background="#221A5E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivhome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteY="677dp" />
+
+    <ImageView
+        android:id="@+id/ivtime4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/ivhome"
+        app:layout_constraintStart_toEndOf="@+id/ivhome"
+        app:layout_constraintTop_toTopOf="@+id/ivhome"
+        app:srcCompat="@drawable/timeact" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:layout_constraintTop_toTopOf="@+id/imageView36"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/vopros" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivstatic4"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintStart_toEndOf="@+id/ivstatic4"
+        app:layout_constraintTop_toTopOf="@+id/ivstatic4"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/chat" />
+
+    <ImageView
+        android:id="@+id/ivstatic4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/ivtime4"
+        app:layout_constraintStart_toEndOf="@+id/ivtime4"
+        app:layout_constraintTop_toTopOf="@+id/ivtime4"
+        app:srcCompat="@drawable/icstat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
